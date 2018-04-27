@@ -9,16 +9,21 @@ optional arguments:
   - -h, --help            show this help message and exit
   
   - -b BACKEND, --backend BACKEND
-    - Specify the backend.
+    Specify the backend.
  
-                        SCAPY will use scapy library to craft the packets and write out the pcap file
-
-                        HEX will create the pcaps by writing HEX strings/numbers into the file directly
-  -o OUTPUT, --output OUTPUT
-                        Specify the output PCAP file's basename! Output will be [output].[PACKETSIZE]bytes.pcap extension is not needed!
-  -s PACKETSIZES, --packetsizes PACKETSIZES
-                        Specify here the required packetsize! In case of more than one, just create a comma separated list such as 64,112,42. Default: 64
-  -n NUM, --num NUM     Specify the number of flows to create - Default: 100
+    SCAPY will use scapy library to craft the packets and write out the pcap file
+ 
+    HEX will create the pcaps by writing HEX strings/numbers into the file directly
+  
+  - -o OUTPUT, --output OUTPUT
+  
+    Specify the output PCAP file's basename! Output will be [output].[PACKETSIZE]bytes.pcap extension is not needed!
+  
+  - -s PACKETSIZES, --packetsizes PACKETSIZES
+     
+    Specify here the required packetsize! In case of more than one, just create a comma separated list such as 64,112,42. Default: 64
+    
+  - -n NUM, --num NUM     Specify the number of flows to create - Default: 100
 
 
 
